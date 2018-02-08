@@ -17,7 +17,7 @@
                     </StackLayout>
                 </StackLayout>
                 <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
-                    <ListView x:Name="listView" Margin="20,0,0,0" s>
+                    <ListView x:Name="listView" Margin="20,0,0,0" >
                         <ListView.Header>
                             <Label Text="Offene Posten"/>
                         </ListView.Header>
