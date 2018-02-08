@@ -42,5 +42,10 @@ namespace RentApplication
             listViewDS.Add(new RentObject() { DisplayName = name.Text, RentalDate = DateTime.Now, type = "Spiel" });
             name.Text = "";
         }
+        public void OnRentEnding(Object sender, EventArgs args)
+        {
+            var mi = ((MenuItem)sender);
+            DisplayAlert("More Context Action", mi.CommandParameter + " more context action", "OK");
+        }
     }
 }

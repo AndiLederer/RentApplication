@@ -17,13 +17,18 @@
                     </StackLayout>
                 </StackLayout>
                 <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
-                    <ListView x:Name="listView" Margin="20,0,0,0">
+                    <ListView x:Name="listView" Margin="20,0,0,0" s>
                         <ListView.Header>
                             <Label Text="Offene Posten"/>
                         </ListView.Header>
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <TextCell Text="{Binding DisplayName}" Detail="{Binding DisplayDetail}" />
+                                <TextCell Text="{Binding DisplayName}" Detail="{Binding DisplayDetail}" >
+                                    <TextCell.ContextActions >
+                                        <MenuItem  Clicked="OnRentEnding" CommandParameter="{Binding .}"
+                                               Text="Zurück gegeben" IsDestructive="True" />
+                                    </TextCell.ContextActions>
+                                </TextCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>

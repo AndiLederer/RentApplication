@@ -25,5 +25,6 @@ namespace RentApplication
 			InitializeComponent ();
             listView.ItemsSource = listViewDS;
         }
-	}
+        
+    }
 }

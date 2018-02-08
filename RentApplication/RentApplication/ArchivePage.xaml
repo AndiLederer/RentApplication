@@ -5,10 +5,11 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
-                <ListView x:Name="listView" Margin="20,0,0,0">
+                <ListView x:Name="listView" Margin="20,0,0,0" >
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <TextCell Text="{Binding DisplayName}" Detail="{Binding DisplayDetail}" />
+                            <TextCell Text="{Binding DisplayName}" Detail="{Binding DisplayDetail}" >
+                            </TextCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
